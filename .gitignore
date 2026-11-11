@@ -1,0 +1,17 @@
+# Raw signal files from the deposit: local only, never committed (see DATA_LICENSE.md)
+data/raw/Raw/
+data/raw/OLST_QTM/
+data/raw/Processed/
+data/raw/Figures/
+*.qtm
+*.mat
+data/raw/**/*.part
+*.part
+# Official README.txt is kept local only (it carries a personal contact line)
+data/raw/README.txt
+# Environment and caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
