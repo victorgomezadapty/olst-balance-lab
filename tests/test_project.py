@@ -23,7 +23,7 @@ DOCS = ["README.md", "RESULTS.md", "DATA_LICENSE.md", "PROVENANCE.md", "PORTFOLI
 DASHES = ["\u2010", "\u2011", "\u2012", "\u2013", "\u2014", "\u2015", "\u2212", "-" * 2]
 FORBIDDEN_NAMES = ["optimo", "malqa", "riyadh"]
 FORBIDDEN_CLAIMS = ["we replicate", "successfully replicated", "outperform", "beats the", "better than the paper",
-                    "kaggle.com", "uploaded to kaggle", "vercel.app", "diagnoses fall risk", "predicts falls",
+                    "vercel.app", "diagnoses fall risk", "predicts falls",
                     "clinical cut-off is", "clinical cutoff is", "proves", "equivalent to the clinical"]
 
 
@@ -235,6 +235,14 @@ def test_only_expected_remote():
     out = subprocess.run(["git", "remote", "-v"], cwd=ROOT, capture_output=True, text=True).stdout.split()
     urls = {u for u in out if "://" in u or u.startswith("git@")}
     assert urls <= {"https://github.com/victorgomezadapty/olst-balance-lab.git", "https://github.com/victorgomezadapty/olst-balance-lab"}
+
+
+def test_only_live_kaggle_links():
+    allowed = {"https://www.kaggle.com/datasets/vctorandrsgmezlpez/one-leg-stance-events-in-young-and-older-adults",
+               "https://www.kaggle.com/code/vctorandrsgmezlpez/olst-balance-lab-one-leg-stance-re-analysis"}
+    for p in ["README.md", "DATA_LICENSE.md"]:
+        found = set(re.findall(r"https://www\.kaggle\.com/[\w/.-]*[\w]", (ROOT / p).read_text(encoding="utf-8")))
+        assert found == allowed, (p, found)
 
 
 def test_single_person_cells_suppressed():
