@@ -1,0 +1,5 @@
+sample,endpoint,n_young,n_old,young_mean,young_ci95_low,young_ci95_high,old_mean,old_ci95_low,old_ci95_high,diff_old_minus_young,diff_ci95_low,diff_ci95_high
+"S1 all valid short attempts, person cluster bootstrap",tts_s,272,458,0.597721,0.547245,0.657488,0.322316,0.265468,0.393274,-0.275404,-0.356316,-0.1879
+"S1 all valid short attempts, person cluster bootstrap",hold_s_all_stable_attempts,272,458,3.04941,2.94585,3.14714,2.23897,1.81616,2.65181,-0.810438,-1.23991,-0.391142
+"S1 all valid short attempts, person cluster bootstrap",early_touchdown_share,272,512,0.0183824,0.00369004,0.0361011,0.335938,0.216092,0.444982,0.317555,0.197707,0.426508
+"S1 all valid short attempts, person cluster bootstrap",naive_break_share,272,512,0.672794,0.667897,0.6787,0.738281,0.697856,0.777788,0.0654871,0.0249231,0.105446

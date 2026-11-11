@@ -1,0 +1,9 @@
+item,card_or_readme,files,match
+Participants,"32 (15 Young, 17 Old)","32 (15 Young, 17 Old)",yes
+Age ranges,"Young 18 to 32, Old 64 and over","Young 19 to 32, Old 64 to 78",yes
+Short captures per leg,3 per person,20 person and leg cells not equal to 3,no
+Long captures,"Old only, 3 per leg","124 captures, Old only",partly
+Total captures,294 implied,334,no
+Labelled attempts,"1,241","1,241",yes
+Missing capture,12_MNTRL_V2,V2 present; V1 absent from metadata and Raw,no
+Final attempt flag,final window in the capture,314 of 334 captures flagged,partly

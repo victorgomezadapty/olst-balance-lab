@@ -1,0 +1,9 @@
+measure,n,median,p25,p75,min,max
+captures: attempts per capture,124,3,1,5,1,15
+"captures: longest stable hold, s",124,11.3,6.915,17.555,1.62,20.84
+"captures: total stable time, s",124,16.265,12.595,17.77,5.09,32.64
+"captures: foot lift to capture end, s",124,19.34,18.65,19.8425,5.66,22.01
+"people: median longest hold, s",17,11.035,7.875,17.31,2.375,19.555
+"people: best longest hold, s",17,18.04,14.41,19.24,5.32,20.84
+captures: one single attempt,124,0.330645,,,,
+captures: longest hold censored by capture end,124,0.459677,,,,

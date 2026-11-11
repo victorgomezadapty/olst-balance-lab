@@ -1,0 +1,12 @@
+task,age_group,event_set,attempts
+long,Old,complete (t_stable and t_break),264
+long,Old,never stable (no t_stable),98
+long,Old,"stable, no t_break, ended at capture end",89
+long,Old,"stable, no t_break, ended before capture end",6
+short,Old,complete (t_stable and t_break),378
+short,Old,never stable (no t_stable),54
+short,Old,"stable, no t_break, ended at capture end",44
+short,Old,"stable, no t_break, ended before capture end",36
+short,Young,complete (t_stable and t_break),183
+short,Young,"stable, no t_break, ended at capture end",84
+short,Young,"stable, no t_break, ended before capture end",5

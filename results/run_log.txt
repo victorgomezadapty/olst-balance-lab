@@ -1,0 +1,8 @@
+python 3.13.5 pandas 3.1.1 numpy 2.5.4
+verified SHA256SUMS.txt sha256 ac177ee0c4771088d722d0ff03df5a9bcc0968d2546089d587d07e4750e00da8
+verified LICENSE.txt sha256 9a78e7f22742dde9f66ae235ec793ba2212019dc4d0ced75c4da09ced0b35fb2
+verified Participant_Demographics.csv sha256 92d8b45db27dd28af0949c735dc83027d4ec89ff76b21f3e7a403cd569cb83f5
+verified OLST_Attempts.csv sha256 fdfed70659a153f0be3a19edaf8c810ddb9d91c29f1668b8b95f80e192e3253b
+forceplate {'status': 'run', 'captures': 209, 'files': 418, 'attempts': 779, 'people': 32, 'short_captures_without_forceplate_in_deposit': ['35_MNTRL_RR_V4']}
+tables 14
+figures 14

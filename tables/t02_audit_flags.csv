@@ -1,0 +1,17 @@
+flag,severity,item,finding
+A1,info,Participant IDs,"32 people, IDs 1 to 56 with 24 absent numbers (screening IDs, per the descriptor); not 1 to 32"
+A2,info,Units,Height in inches and weight in pounds; converted in memory only. Stated BMI matches the metric recomputation within 0.052 kg/m2
+A3,ok,Age_Group vs age,"0 inconsistent rows; Young 19 to 32, Old 64 to 78; no minors"
+A4,flag,Missing capture label,"README and descriptor say 12_MNTRL_V2 is missing. The files hold 12_MNTRL versions V2, V3 in OLST_Attempts.csv, V2, V3 in Raw/ForcePlate and V2, V3 in Raw/MOCAP (QTM folder: V1, V2, V3). The capture missing from the analysable files is V1, not V2; not corrected, only flagged"
+A5,flag,Captures per protocol,"334 captures vs 294 implied by three captures per leg and task; 43 captures are a fourth version (V4), all in the Old group"
+A6,flag,is_attempt_final,"314 True for 334 captures: always on the last attempt, but 20 captures (all Old, mostly long) have no final attempt flagged"
+A7,info,Event completeness,"t_stable missing in 152 attempts (never stable), t_break missing in 416; t_break never present without t_stable; 0 order violations"
+A8,flag,Capture end truncation,"237 attempts end exactly at MOCAP_End_Time (recording ended, not a touchdown); holds there are right censored"
+A9,flag,t_break meaning in short windows,"In 4 s cued windows the end of stability is usually the end cue, so a present t_break is not by itself a loss of balance"
+A10,info,Seconds_per_Frame,varies from 0.03612 to 0.03920 s across captures (SD 0.00062); recomputed from times and frames within 1.1e-03 s
+A10b,flag,Frame vs time,"3 attempts (one capture) have frame_foot_up more than 2 frames away from the time based conversion (max 15.4 frames); radar only, not used here"
+A10c,flag,Force-plate files,labelled captures without force-plate CSVs in the deposit: 35_MNTRL_RR_V4; without a MOCAP CSV: none
+A11,flag,Short sync window,2 captures with a sync window under 15 s (min 7.82 s; median 21.68 s)
+A12,info,Window assignment,gap rule gives 3 windows in 209 short captures and 2 in 1; agrees with the time band rule for 773 of 784 short attempts
+A13,flag,README citation,"README still cites the descriptor as Scientific Data 2025, under review; it was published 25 Feb 2026 (DOI 10.1038/s41597-026-06831-1)"
+A14,flag,README wording,"README says only long 20 s trials are available for older adults; the files show Old participants have both short and long captures, and long ones only exist for Old"

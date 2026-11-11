@@ -1,0 +1,25 @@
+group,check,attempts,people,share,ci95_low,ci95_high
+All,lifted plate unloaded during labelled stable phase,557,32,1,1,1
+All,stance COP speed lowest in labelled stable phase,552,32,0.387681,0.310394,0.465461
+All,stance COP speed lower than foot up phase (added after plan),552,32,0.804348,0.755595,0.853621
+All,force-plate onset within 0.5 s of t_stable,556,32,0.138489,0.108251,0.172123
+All,"force-plate onset minus t_stable, s (median; p25 to p75 in CI columns)",556,32,1.30541,0.777082,1.88333
+All,"median stance COP speed, fu phase, mm/s",552,32,101.483,78.5788,133.092
+All,"median stance COP speed, stable phase, mm/s",557,32,67.6024,52.6896,88.1695
+All,"median stance COP speed, fd phase, mm/s",557,32,62.6689,40.2443,93.4701
+Young,lifted plate unloaded during labelled stable phase,183,15,1,1,1
+Young,stance COP speed lowest in labelled stable phase,183,15,0.437158,0.318681,0.554363
+Young,stance COP speed lower than foot up phase (added after plan),183,15,0.912568,0.854749,0.961957
+Young,force-plate onset within 0.5 s of t_stable,253,15,0.106719,0.0719857,0.141176
+Young,"force-plate onset minus t_stable, s (median; p25 to p75 in CI columns)",253,15,1.30167,0.86,1.80583
+Young,"median stance COP speed, fu phase, mm/s",183,15,93.9031,74.8792,122.326
+Young,"median stance COP speed, stable phase, mm/s",183,15,59.93,49.6386,69.057
+Young,"median stance COP speed, fd phase, mm/s",183,15,54.9735,40.4993,75.376
+Old,lifted plate unloaded during labelled stable phase,374,17,1,1,1
+Old,stance COP speed lowest in labelled stable phase,369,17,0.363144,0.264957,0.457977
+Old,stance COP speed lower than foot up phase (added after plan),369,17,0.750678,0.684652,0.805406
+Old,force-plate onset within 0.5 s of t_stable,303,17,0.165017,0.117284,0.21695
+Old,"force-plate onset minus t_stable, s (median; p25 to p75 in CI columns)",303,17,1.3075,0.6725,1.93459
+Old,"median stance COP speed, fu phase, mm/s",369,17,107.323,79.6282,137.485
+Old,"median stance COP speed, stable phase, mm/s",374,17,75.9075,55.1389,96.8718
+Old,"median stance COP speed, fd phase, mm/s",374,17,66.9278,40.1102,116.065

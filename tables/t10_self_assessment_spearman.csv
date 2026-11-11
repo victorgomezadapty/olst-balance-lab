@@ -1,0 +1,7 @@
+group,endpoint,n_people,spearman_rho,ci95_low,ci95_high
+All,window_failure_share,32,-0.480497,-0.748639,-0.132844
+All,first_hold_s,32,0.232151,-0.2077,0.601081
+Young,window_failure_share,15,-0.115378,-0.5685,0.336546
+Young,first_hold_s,15,-0.393763,-0.819727,0.211443
+Old,window_failure_share,17,-0.712432,-0.906597,-0.364868
+Old,first_hold_s,17,0.531369,0,0.872076

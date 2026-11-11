@@ -1,0 +1,1197 @@
+{
+  "project": "OLST Balance Lab",
+  "package": "olst_balance_lab",
+  "status": "local draft, not published",
+  "dataset": {
+    "title": "Multimodal Synchronized Motion Capture, Force Plate, and Radar Dataset of the One-Legged Stand Test for Fall-Risk Assessment",
+    "physionet_slug": "olst-mocap-forceplate-radar",
+    "version": "1.0",
+    "page": "https://physionet.org/content/olst-mocap-forceplate-radar/1.0/",
+    "version_doi": "10.13026/46hn-6b25",
+    "concept_doi": "10.13026/70xa-vm53",
+    "published": "2026-01-25",
+    "creators": [
+      "Daniel Copeland",
+      "Evan Linton",
+      "Xiang Zhang",
+      "Hector Lugaro",
+      "Buntoku Mori",
+      "Brian Anthony"
+    ],
+    "citation": "Copeland, D., Linton, E., Zhang, X., Lugaro, H., Mori, B., and Anthony, B. (2026). Multimodal Synchronized Motion Capture, Force Plate, and Radar Dataset of the One-Legged Stand Test for Fall-Risk Assessment (version 1.0). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/46hn-6b25",
+    "physionet_citation": "Pollard, T., et al. (2026). PhysioNet as a global platform for biomedical research. Nature Health. https://doi.org/10.1038/s44360-026-00096-z",
+    "access": "open access",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "license_contradiction": false,
+    "files_verified": {
+      "SHA256SUMS.txt": {
+        "bytes": 178551,
+        "sha256": "ac177ee0c4771088d722d0ff03df5a9bcc0968d2546089d587d07e4750e00da8"
+      },
+      "LICENSE.txt": {
+        "bytes": 14842,
+        "sha256": "9a78e7f22742dde9f66ae235ec793ba2212019dc4d0ced75c4da09ced0b35fb2"
+      },
+      "Participant_Demographics.csv": {
+        "bytes": 984,
+        "sha256": "92d8b45db27dd28af0949c735dc83027d4ec89ff76b21f3e7a403cd569cb83f5"
+      },
+      "OLST_Attempts.csv": {
+        "bytes": 133530,
+        "sha256": "fdfed70659a153f0be3a19edaf8c810ddb9d91c29f1668b8b95f80e192e3253b"
+      }
+    }
+  },
+  "companion_paper": {
+    "citation": "Copeland D, Zhang X, Linton E, Mori B, Lugaro H, Anthony BW. One-Legged Stand Test: Synchronized Motion Capture, Force Plate, and Radar Dataset for Fall-Risk. Scientific Data. Published 25 Feb 2026.",
+    "doi": "10.1038/s41597-026-06831-1",
+    "license": "CC BY-NC-ND 4.0",
+    "use": "cited only; no text, tables, figures, code or coefficients reused"
+  },
+  "environment": {
+    "python": "3.13.5",
+    "pandas": "3.1.1",
+    "numpy": "2.5.4"
+  },
+  "audit": {
+    "facts": {
+      "n_participants": 32,
+      "n_young": 15,
+      "n_old": 17,
+      "id_min": 1,
+      "id_max": 56,
+      "ids_absent_in_range": 24,
+      "age_range": [
+        19,
+        78
+      ],
+      "age_range_young": [
+        19,
+        32
+      ],
+      "age_range_old": [
+        64,
+        78
+      ],
+      "n_under_18": 0,
+      "n_aged_19_or_20": 2,
+      "age_group_inconsistent": 0,
+      "gender_counts": {
+        "1 (M)": 19,
+        "2 (F)": 13
+      },
+      "height_unit": "inches",
+      "weight_unit": "pounds",
+      "bmi_max_abs_diff_recomputed": 0.052,
+      "bmi_n_diff_over_0_1": 0,
+      "self_assessment_values": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "demographics_has_bom": true,
+      "n_attempts": 1241,
+      "n_captures": 334,
+      "modalities_in_attempts": [
+        "RR"
+      ],
+      "captures_by_code_group": {
+        "MNTRL|Old": 61,
+        "MNTRL|Young": 44,
+        "MNTRR|Old": 60,
+        "MNTRR|Young": 45,
+        "TRLGL|Old": 62,
+        "TRLGR|Old": 62
+      },
+      "attempts_by_code_group": {
+        "MNTRL|Old": 261,
+        "MNTRL|Young": 135,
+        "MNTRR|Old": 251,
+        "MNTRR|Young": 137,
+        "TRLGL|Old": 250,
+        "TRLGR|Old": 207
+      },
+      "captures_expected_by_protocol": 294,
+      "captures_beyond_v3": 43,
+      "captures_beyond_v3_by_group": {
+        "Old": 43
+      },
+      "capture_12_MNTRL_V2_present": true,
+      "participant_12_MNTRL_versions_in_attempts": [
+        "V2",
+        "V3"
+      ],
+      "participant_12_MNTRL_versions_raw_forceplate": [
+        "V2",
+        "V3"
+      ],
+      "participant_12_MNTRL_versions_raw_mocap": [
+        "V2",
+        "V3"
+      ],
+      "participant_12_MNTRL_versions_qtm": [
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "person_code_cells_short_not_3": {
+        "12|MNTRL": 2,
+        "35|MNTRL": 4,
+        "35|MNTRR": 4,
+        "36|MNTRL": 4,
+        "36|MNTRR": 4,
+        "39|MNTRL": 4,
+        "43|MNTRL": 4,
+        "43|MNTRR": 4,
+        "47|MNTRL": 4,
+        "47|MNTRR": 4,
+        "52|MNTRL": 4,
+        "52|MNTRR": 4,
+        "53|MNTRL": 4,
+        "53|MNTRR": 4,
+        "54|MNTRL": 4,
+        "54|MNTRR": 4,
+        "55|MNTRL": 4,
+        "55|MNTRR": 4,
+        "56|MNTRL": 4,
+        "56|MNTRR": 4
+      },
+      "an_gaps": 0,
+      "attempts_per_capture": {
+        "1": 41,
+        "2": 17,
+        "3": 155,
+        "4": 49,
+        "5": 25,
+        "6": 11,
+        "7": 12,
+        "8": 9,
+        "9": 7,
+        "10": 3,
+        "11": 2,
+        "14": 2,
+        "15": 1
+      },
+      "finals_true": 314,
+      "captures_with_final_flag": 314,
+      "captures_without_final_flag": 20,
+      "captures_without_final_by_code": {
+        "TRLGR": 10,
+        "TRLGL": 6,
+        "MNTRL": 4
+      },
+      "captures_without_final_by_group": {
+        "Old": 20
+      },
+      "final_flag_not_on_last_attempt": 0,
+      "missing_t_stable": 152,
+      "missing_t_break": 416,
+      "missing_t_foot_up_or_t_end": 0,
+      "break_without_stable": 0,
+      "event_order_violations": 0,
+      "censored_at_capture_end": 237,
+      "censored_without_break": 222,
+      "censored_with_break": 15,
+      "no_break_not_censored": 194,
+      "no_break_not_censored_but_stable": 47,
+      "very_short_attempts_under_0_5s": 106,
+      "capture_sync_window_s": {
+        "min": 7.82,
+        "median": 21.68,
+        "max": 23.9
+      },
+      "captures_sync_window_under_15s": 2,
+      "seconds_per_frame_recompute_max_abs_diff": 0.0011,
+      "seconds_per_frame": {
+        "mean": 0.0378,
+        "sd": 0.0006,
+        "min": 0.0361,
+        "max": 0.0392
+      },
+      "seconds_per_frame_within_person_sd_median": 0.0001,
+      "frame_foot_up_vs_time_max_abs_frames": 15.4255,
+      "frame_foot_up_vs_time_over_2_frames": 3,
+      "short_captures_windows": {
+        "2": 1,
+        "3": 209
+      },
+      "window_rule_vs_timeband_agree": 773,
+      "window_rule_vs_timeband_n": 784,
+      "captures_without_forceplate_in_deposit": [
+        "35_MNTRL_RR_V4"
+      ],
+      "captures_without_mocap_csv_in_deposit": [],
+      "readme_citation_says_under_review": true,
+      "readme_says_only_long_for_old": true
+    },
+    "flags": {
+      "A1": {
+        "severity": "info",
+        "item": "Participant IDs",
+        "finding": "32 people, IDs 1 to 56 with 24 absent numbers (screening IDs, per the descriptor); not 1 to 32"
+      },
+      "A2": {
+        "severity": "info",
+        "item": "Units",
+        "finding": "Height in inches and weight in pounds; converted in memory only. Stated BMI matches the metric recomputation within 0.052 kg/m2"
+      },
+      "A3": {
+        "severity": "ok",
+        "item": "Age_Group vs age",
+        "finding": "0 inconsistent rows; Young 19 to 32, Old 64 to 78; no minors"
+      },
+      "A4": {
+        "severity": "flag",
+        "item": "Missing capture label",
+        "finding": "README and descriptor say 12_MNTRL_V2 is missing. The files hold 12_MNTRL versions V2, V3 in OLST_Attempts.csv, V2, V3 in Raw/ForcePlate and V2, V3 in Raw/MOCAP (QTM folder: V1, V2, V3). The capture missing from the analysable files is V1, not V2; not corrected, only flagged"
+      },
+      "A5": {
+        "severity": "flag",
+        "item": "Captures per protocol",
+        "finding": "334 captures vs 294 implied by three captures per leg and task; 43 captures are a fourth version (V4), all in the Old group"
+      },
+      "A6": {
+        "severity": "flag",
+        "item": "is_attempt_final",
+        "finding": "314 True for 334 captures: always on the last attempt, but 20 captures (all Old, mostly long) have no final attempt flagged"
+      },
+      "A7": {
+        "severity": "info",
+        "item": "Event completeness",
+        "finding": "t_stable missing in 152 attempts (never stable), t_break missing in 416; t_break never present without t_stable; 0 order violations"
+      },
+      "A8": {
+        "severity": "flag",
+        "item": "Capture end truncation",
+        "finding": "237 attempts end exactly at MOCAP_End_Time (recording ended, not a touchdown); holds there are right censored"
+      },
+      "A9": {
+        "severity": "flag",
+        "item": "t_break meaning in short windows",
+        "finding": "In 4 s cued windows the end of stability is usually the end cue, so a present t_break is not by itself a loss of balance"
+      },
+      "A10": {
+        "severity": "info",
+        "item": "Seconds_per_Frame",
+        "finding": "varies from 0.03612 to 0.03920 s across captures (SD 0.00062); recomputed from times and frames within 1.1e-03 s"
+      },
+      "A10b": {
+        "severity": "flag",
+        "item": "Frame vs time",
+        "finding": "3 attempts (one capture) have frame_foot_up more than 2 frames away from the time based conversion (max 15.4 frames); radar only, not used here"
+      },
+      "A10c": {
+        "severity": "flag",
+        "item": "Force-plate files",
+        "finding": "labelled captures without force-plate CSVs in the deposit: 35_MNTRL_RR_V4; without a MOCAP CSV: none"
+      },
+      "A11": {
+        "severity": "flag",
+        "item": "Short sync window",
+        "finding": "2 captures with a sync window under 15 s (min 7.82 s; median 21.68 s)"
+      },
+      "A12": {
+        "severity": "info",
+        "item": "Window assignment",
+        "finding": "gap rule gives 3 windows in 209 short captures and 2 in 1; agrees with the time band rule for 773 of 784 short attempts"
+      },
+      "A13": {
+        "severity": "flag",
+        "item": "README citation",
+        "finding": "README still cites the descriptor as Scientific Data 2025, under review; it was published 25 Feb 2026 (DOI 10.1038/s41597-026-06831-1)"
+      },
+      "A14": {
+        "severity": "flag",
+        "item": "README wording",
+        "finding": "README says only long 20 s trials are available for older adults; the files show Old participants have both short and long captures, and long ones only exist for Old"
+      }
+    }
+  },
+  "primary_sample": {
+    "definition": "all short captures (MNTRL, MNTRR) of all 32 participants, attempts grouped into cued 4 s windows (new window when the foot lifts at least 2.0 s after the previous attempt ended); one summary per person over all their short windows; Old minus Young",
+    "windows": 629,
+    "people": 32,
+    "young_people": 15,
+    "old_people": 17,
+    "young_windows": 267,
+    "old_windows": 362
+  },
+  "ci_method": "percentile bootstrap, persons resampled within group, 5000 resamples, seed 20261111; Welch t interval as a check",
+  "primary": {
+    "window_failure_share": {
+      "n_young": 15,
+      "n_old": 17,
+      "young_mean": 0.0193,
+      "young_ci95_low": 0.0037,
+      "young_ci95_high": 0.0378,
+      "young_median": 0.0,
+      "old_mean": 0.2796,
+      "old_ci95_low": 0.1748,
+      "old_ci95_high": 0.4023,
+      "old_median": 0.2083,
+      "diff_old_minus_young": 0.2604,
+      "diff_ci95_low": 0.154,
+      "diff_ci95_high": 0.384,
+      "welch_ci95_low": 0.1333,
+      "welch_ci95_high": 0.3875,
+      "welch_p": 0.0005
+    },
+    "tts_s": {
+      "n_young": 15,
+      "n_old": 17,
+      "young_mean": 0.5893,
+      "young_ci95_low": 0.5397,
+      "young_ci95_high": 0.646,
+      "young_median": 0.59,
+      "old_mean": 0.3393,
+      "old_ci95_low": 0.2789,
+      "old_ci95_high": 0.4032,
+      "old_median": 0.32,
+      "diff_old_minus_young": -0.25,
+      "diff_ci95_low": -0.3319,
+      "diff_ci95_high": -0.168,
+      "welch_ci95_low": -0.338,
+      "welch_ci95_high": -0.1621,
+      "welch_p": 0.0
+    },
+    "first_hold_s": {
+      "n_young": 15,
+      "n_old": 17,
+      "young_mean": 3.349,
+      "young_ci95_low": 3.279,
+      "young_ci95_high": 3.4253,
+      "young_median": 3.315,
+      "old_mean": 2.5218,
+      "old_ci95_low": 2.1353,
+      "old_ci95_high": 2.8806,
+      "old_median": 2.585,
+      "diff_old_minus_young": -0.8272,
+      "diff_ci95_low": -1.2285,
+      "diff_ci95_high": -0.4632,
+      "welch_ci95_low": -1.2442,
+      "welch_ci95_high": -0.4103,
+      "welch_p": 0.0006
+    }
+  },
+  "attempt_shares_per_person": {
+    "early_touchdown_share": {
+      "n_young": 15,
+      "n_old": 17,
+      "young_mean": 0.0179,
+      "young_ci95_low": 0.0035,
+      "young_ci95_high": 0.0347,
+      "young_median": 0.0,
+      "old_mean": 0.2752,
+      "old_ci95_low": 0.193,
+      "old_ci95_high": 0.3681,
+      "old_median": 0.2414,
+      "diff_old_minus_young": 0.2574,
+      "diff_ci95_low": 0.1736,
+      "diff_ci95_high": 0.3513,
+      "welch_ci95_low": 0.1593,
+      "welch_ci95_high": 0.3555,
+      "welch_p": 0.0
+    },
+    "naive_break_share": {
+      "n_young": 15,
+      "n_old": 17,
+      "young_mean": 0.6726,
+      "young_ci95_low": 0.6678,
+      "young_ci95_high": 0.6782,
+      "young_median": 0.6667,
+      "old_mean": 0.7284,
+      "old_ci95_low": 0.6927,
+      "old_ci95_high": 0.7674,
+      "old_median": 0.7143,
+      "diff_old_minus_young": 0.0558,
+      "diff_ci95_low": 0.0189,
+      "diff_ci95_high": 0.0948,
+      "welch_ci95_low": 0.0135,
+      "welch_ci95_high": 0.0982,
+      "welch_p": 0.0129
+    },
+    "never_stable_share": {
+      "n_young": 15,
+      "n_old": 17,
+      "young_mean": 0.0,
+      "young_ci95_low": 0.0,
+      "young_ci95_high": 0.0,
+      "young_median": 0.0,
+      "old_mean": 0.088,
+      "old_ci95_low": 0.0564,
+      "old_ci95_high": 0.1255,
+      "old_median": 0.0645,
+      "diff_old_minus_young": 0.088,
+      "diff_ci95_low": 0.0564,
+      "diff_ci95_high": 0.1255,
+      "welch_ci95_low": 0.0501,
+      "welch_ci95_high": 0.1258,
+      "welch_p": 0.0002
+    }
+  },
+  "sensitivity_S1_attempt_level": {
+    "tts_s": {
+      "n_young": 272,
+      "n_old": 458,
+      "young_mean": 0.5977,
+      "young_ci95_low": 0.5472,
+      "young_ci95_high": 0.6575,
+      "old_mean": 0.3223,
+      "old_ci95_low": 0.2655,
+      "old_ci95_high": 0.3933,
+      "diff_old_minus_young": -0.2754,
+      "diff_ci95_low": -0.3563,
+      "diff_ci95_high": -0.1879
+    },
+    "hold_s_all_stable_attempts": {
+      "n_young": 272,
+      "n_old": 458,
+      "young_mean": 3.0494,
+      "young_ci95_low": 2.9459,
+      "young_ci95_high": 3.1471,
+      "old_mean": 2.239,
+      "old_ci95_low": 1.8162,
+      "old_ci95_high": 2.6518,
+      "diff_old_minus_young": -0.8104,
+      "diff_ci95_low": -1.2399,
+      "diff_ci95_high": -0.3911
+    },
+    "early_touchdown_share": {
+      "n_young": 272,
+      "n_old": 512,
+      "young_mean": 0.0184,
+      "young_ci95_low": 0.0037,
+      "young_ci95_high": 0.0361,
+      "old_mean": 0.3359,
+      "old_ci95_low": 0.2161,
+      "old_ci95_high": 0.445,
+      "diff_old_minus_young": 0.3176,
+      "diff_ci95_low": 0.1977,
+      "diff_ci95_high": 0.4265
+    },
+    "naive_break_share": {
+      "n_young": 272,
+      "n_old": 512,
+      "young_mean": 0.6728,
+      "young_ci95_low": 0.6679,
+      "young_ci95_high": 0.6787,
+      "old_mean": 0.7383,
+      "old_ci95_low": 0.6979,
+      "old_ci95_high": 0.7778,
+      "diff_old_minus_young": 0.0655,
+      "diff_ci95_low": 0.0249,
+      "diff_ci95_high": 0.1054
+    }
+  },
+  "sensitivity_person_level": {
+    "S2 person mean": {
+      "window_failure_share": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 0.0193,
+        "young_ci95_low": 0.0037,
+        "young_ci95_high": 0.0378,
+        "young_median": 0.0,
+        "old_mean": 0.2796,
+        "old_ci95_low": 0.1748,
+        "old_ci95_high": 0.4023,
+        "old_median": 0.2083,
+        "diff_old_minus_young": 0.2604,
+        "diff_ci95_low": 0.154,
+        "diff_ci95_high": 0.384,
+        "welch_ci95_low": 0.1333,
+        "welch_ci95_high": 0.3875,
+        "welch_p": 0.0005
+      },
+      "tts_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 0.6013,
+        "young_ci95_low": 0.5503,
+        "young_ci95_high": 0.6609,
+        "young_median": 0.5861,
+        "old_mean": 0.3722,
+        "old_ci95_low": 0.3055,
+        "old_ci95_high": 0.4454,
+        "old_median": 0.3724,
+        "diff_old_minus_young": -0.2291,
+        "diff_ci95_low": -0.3175,
+        "diff_ci95_high": -0.1378,
+        "welch_ci95_low": -0.3248,
+        "welch_ci95_high": -0.1333,
+        "welch_p": 0.0
+      },
+      "first_hold_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 3.0878,
+        "young_ci95_low": 3.0077,
+        "young_ci95_high": 3.1676,
+        "young_median": 3.085,
+        "old_mean": 2.489,
+        "old_ci95_low": 2.1554,
+        "old_ci95_high": 2.7767,
+        "old_median": 2.67,
+        "diff_old_minus_young": -0.5988,
+        "diff_ci95_low": -0.9431,
+        "diff_ci95_high": -0.2978,
+        "welch_ci95_low": -0.9525,
+        "welch_ci95_high": -0.2451,
+        "welch_p": 0.0022
+      }
+    },
+    "S3 final attempt only (is_attempt_final), hold 0 if never stable, failure = never stable": {
+      "window_failure_share": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 0.0,
+        "young_ci95_low": 0.0,
+        "young_ci95_high": 0.0,
+        "young_median": 0.0,
+        "old_mean": 0.0,
+        "old_ci95_low": 0.0,
+        "old_ci95_high": 0.0,
+        "old_median": 0.0,
+        "diff_old_minus_young": 0.0,
+        "diff_ci95_low": 0.0,
+        "diff_ci95_high": 0.0,
+        "welch_ci95_low": 0.0,
+        "welch_ci95_high": 0.0,
+        "welch_p": null
+      },
+      "tts_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 0.5903,
+        "young_ci95_low": 0.537,
+        "young_ci95_high": 0.654,
+        "young_median": 0.585,
+        "old_mean": 0.327,
+        "old_ci95_low": 0.2691,
+        "old_ci95_high": 0.3906,
+        "old_median": 0.32,
+        "diff_old_minus_young": -0.2633,
+        "diff_ci95_low": -0.3487,
+        "diff_ci95_high": -0.1795,
+        "welch_ci95_low": -0.3552,
+        "welch_ci95_high": -0.1714,
+        "welch_p": 0.0
+      },
+      "first_hold_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 2.486,
+        "young_ci95_low": 2.2907,
+        "young_ci95_high": 2.685,
+        "young_median": 2.385,
+        "old_mean": 2.3218,
+        "old_ci95_low": 1.9341,
+        "old_ci95_high": 2.7074,
+        "old_median": 2.19,
+        "diff_old_minus_young": -0.1642,
+        "diff_ci95_low": -0.601,
+        "diff_ci95_high": 0.2776,
+        "welch_ci95_low": -0.6394,
+        "welch_ci95_high": 0.3109,
+        "welch_p": 0.4821
+      }
+    },
+    "S4 best stable hold of any short attempt": {
+      "first_hold_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 3.7967,
+        "young_ci95_low": 3.724,
+        "young_ci95_high": 3.8713,
+        "young_median": 3.81,
+        "old_mean": 3.9735,
+        "old_ci95_low": 3.6188,
+        "old_ci95_high": 4.3247,
+        "old_median": 3.99,
+        "diff_old_minus_young": 0.1769,
+        "diff_ci95_low": -0.1811,
+        "diff_ci95_high": 0.5383,
+        "welch_ci95_low": -0.2209,
+        "welch_ci95_high": 0.5746,
+        "welch_p": 0.3619
+      }
+    },
+    "S5 windows with a censored first attempt removed": {
+      "window_failure_share": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 0.0258,
+        "young_ci95_low": 0.0056,
+        "young_ci95_high": 0.0508,
+        "young_median": 0.0,
+        "old_mean": 0.3046,
+        "old_ci95_low": 0.1999,
+        "old_ci95_high": 0.4268,
+        "old_median": 0.2105,
+        "diff_old_minus_young": 0.2788,
+        "diff_ci95_low": 0.1718,
+        "diff_ci95_high": 0.4015,
+        "welch_ci95_low": 0.1516,
+        "welch_ci95_high": 0.4061,
+        "welch_p": 0.0002
+      },
+      "tts_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 0.5893,
+        "young_ci95_low": 0.5403,
+        "young_ci95_high": 0.646,
+        "young_median": 0.59,
+        "old_mean": 0.3455,
+        "old_ci95_low": 0.2856,
+        "old_ci95_high": 0.4089,
+        "old_median": 0.32,
+        "diff_old_minus_young": -0.2439,
+        "diff_ci95_low": -0.3249,
+        "diff_ci95_high": -0.1608,
+        "welch_ci95_low": -0.3313,
+        "welch_ci95_high": -0.1564,
+        "welch_p": 0.0
+      },
+      "first_hold_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 3.4837,
+        "young_ci95_low": 3.4117,
+        "young_ci95_high": 3.5503,
+        "young_median": 3.5,
+        "old_mean": 2.5868,
+        "old_ci95_low": 2.1582,
+        "old_ci95_high": 2.9912,
+        "old_median": 2.585,
+        "diff_old_minus_young": -0.8969,
+        "diff_ci95_low": -1.3272,
+        "diff_ci95_high": -0.4942,
+        "welch_ci95_low": -1.3592,
+        "welch_ci95_high": -0.4346,
+        "welch_p": 0.0008
+      }
+    },
+    "S6 versions V1 to V3 only": {
+      "window_failure_share": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 0.0193,
+        "young_ci95_low": 0.0037,
+        "young_ci95_high": 0.0378,
+        "young_median": 0.0,
+        "old_mean": 0.2928,
+        "old_ci95_low": 0.183,
+        "old_ci95_high": 0.4183,
+        "old_median": 0.2222,
+        "diff_old_minus_young": 0.2735,
+        "diff_ci95_low": 0.1637,
+        "diff_ci95_high": 0.4007,
+        "welch_ci95_low": 0.1422,
+        "welch_ci95_high": 0.4048,
+        "welch_p": 0.0004
+      },
+      "tts_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 0.5893,
+        "young_ci95_low": 0.5397,
+        "young_ci95_high": 0.646,
+        "young_median": 0.59,
+        "old_mean": 0.3334,
+        "old_ci95_low": 0.2706,
+        "old_ci95_high": 0.4,
+        "old_median": 0.32,
+        "diff_old_minus_young": -0.2559,
+        "diff_ci95_low": -0.3394,
+        "diff_ci95_high": -0.1711,
+        "welch_ci95_low": -0.3457,
+        "welch_ci95_high": -0.1661,
+        "welch_p": 0.0
+      },
+      "first_hold_s": {
+        "n_young": 15,
+        "n_old": 17,
+        "young_mean": 3.349,
+        "young_ci95_low": 3.279,
+        "young_ci95_high": 3.4253,
+        "young_median": 3.315,
+        "old_mean": 2.4788,
+        "old_ci95_low": 2.0864,
+        "old_ci95_high": 2.8477,
+        "old_median": 2.545,
+        "diff_old_minus_young": -0.8702,
+        "diff_ci95_low": -1.2739,
+        "diff_ci95_high": -0.4964,
+        "welch_ci95_low": -1.2957,
+        "welch_ci95_high": -0.4446,
+        "welch_p": 0.0005
+      }
+    }
+  },
+  "stance_foot": {
+    "All|window_failure_share": {
+      "n_people": 32,
+      "mean_left_base": 0.1554,
+      "mean_right_base": 0.1592,
+      "mean_diff_left_minus_right": -0.0038,
+      "ci95_low": -0.0547,
+      "ci95_high": 0.0503
+    },
+    "All|tts_s": {
+      "n_people": 32,
+      "mean_left_base": 0.4402,
+      "mean_right_base": 0.4733,
+      "mean_diff_left_minus_right": -0.033,
+      "ci95_low": -0.0605,
+      "ci95_high": -0.0077
+    },
+    "All|first_hold_s": {
+      "n_people": 32,
+      "mean_left_base": 2.8575,
+      "mean_right_base": 2.9559,
+      "mean_diff_left_minus_right": -0.0984,
+      "ci95_low": -0.2852,
+      "ci95_high": 0.0492
+    },
+    "Young|window_failure_share": {
+      "n_people": 15,
+      "mean_left_base": 0.0222,
+      "mean_right_base": 0.0148,
+      "mean_diff_left_minus_right": 0.0074,
+      "ci95_low": -0.0296,
+      "ci95_high": 0.0519
+    },
+    "Young|tts_s": {
+      "n_people": 15,
+      "mean_left_base": 0.5727,
+      "mean_right_base": 0.6093,
+      "mean_diff_left_minus_right": -0.0367,
+      "ci95_low": -0.0667,
+      "ci95_high": -0.0073
+    },
+    "Young|first_hold_s": {
+      "n_people": 15,
+      "mean_left_base": 3.379,
+      "mean_right_base": 3.34,
+      "mean_diff_left_minus_right": 0.039,
+      "ci95_low": -0.054,
+      "ci95_high": 0.1273
+    },
+    "Old|window_failure_share": {
+      "n_people": 17,
+      "mean_left_base": 0.2729,
+      "mean_right_base": 0.2865,
+      "mean_diff_left_minus_right": -0.0137,
+      "ci95_low": -0.1019,
+      "ci95_high": 0.0795
+    },
+    "Old|tts_s": {
+      "n_people": 17,
+      "mean_left_base": 0.3234,
+      "mean_right_base": 0.3532,
+      "mean_diff_left_minus_right": -0.0298,
+      "ci95_low": -0.0749,
+      "ci95_high": 0.0097
+    },
+    "Old|first_hold_s": {
+      "n_people": 17,
+      "mean_left_base": 2.3974,
+      "mean_right_base": 2.6171,
+      "mean_diff_left_minus_right": -0.2197,
+      "ci95_low": -0.5368,
+      "ci95_high": 0.0477
+    }
+  },
+  "self_assessment_descriptive": {
+    "All|window_failure_share": {
+      "n_people": 32,
+      "spearman_rho": -0.4805,
+      "ci95_low": -0.7486,
+      "ci95_high": -0.1328
+    },
+    "All|first_hold_s": {
+      "n_people": 32,
+      "spearman_rho": 0.2322,
+      "ci95_low": -0.2077,
+      "ci95_high": 0.6011
+    },
+    "Young|window_failure_share": {
+      "n_people": 15,
+      "spearman_rho": -0.1154,
+      "ci95_low": -0.5685,
+      "ci95_high": 0.3365
+    },
+    "Young|first_hold_s": {
+      "n_people": 15,
+      "spearman_rho": -0.3938,
+      "ci95_low": -0.8197,
+      "ci95_high": 0.2114
+    },
+    "Old|window_failure_share": {
+      "n_people": 17,
+      "spearman_rho": -0.7124,
+      "ci95_low": -0.9066,
+      "ci95_high": -0.3649
+    },
+    "Old|first_hold_s": {
+      "n_people": 17,
+      "spearman_rho": 0.5314,
+      "ci95_low": 0.0,
+      "ci95_high": 0.8721
+    }
+  },
+  "long_old_only_descriptive": {
+    "captures: attempts per capture": {
+      "n": 124,
+      "median": 3.0,
+      "p25": 1.0,
+      "p75": 5.0,
+      "min": 1.0,
+      "max": 15.0
+    },
+    "captures: longest stable hold, s": {
+      "n": 124,
+      "median": 11.3,
+      "p25": 6.915,
+      "p75": 17.555,
+      "min": 1.62,
+      "max": 20.84
+    },
+    "captures: total stable time, s": {
+      "n": 124,
+      "median": 16.265,
+      "p25": 12.595,
+      "p75": 17.77,
+      "min": 5.09,
+      "max": 32.64
+    },
+    "captures: foot lift to capture end, s": {
+      "n": 124,
+      "median": 19.34,
+      "p25": 18.65,
+      "p75": 19.8425,
+      "min": 5.66,
+      "max": 22.01
+    },
+    "people: median longest hold, s": {
+      "n": 17,
+      "median": 11.035,
+      "p25": 7.875,
+      "p75": 17.31,
+      "min": 2.375,
+      "max": 19.555
+    },
+    "people: best longest hold, s": {
+      "n": 17,
+      "median": 18.04,
+      "p25": 14.41,
+      "p75": 19.24,
+      "min": 5.32,
+      "max": 20.84
+    },
+    "captures: one single attempt": {
+      "n": 124,
+      "median": 0.3306,
+      "p25": null,
+      "p75": null,
+      "min": null,
+      "max": null
+    },
+    "captures: longest hold censored by capture end": {
+      "n": 124,
+      "median": 0.4597,
+      "p25": null,
+      "p75": null,
+      "min": null,
+      "max": null
+    }
+  },
+  "attempts_per_window": {
+    "Old": {
+      "mean": 1.4144,
+      "median": 1.0,
+      "max": 5,
+      "windows": 362
+    },
+    "Young": {
+      "mean": 1.0187,
+      "median": 1.0,
+      "max": 2,
+      "windows": 267
+    }
+  },
+  "forceplate": {
+    "status": "run",
+    "captures": 209,
+    "files": 418,
+    "attempts": 779,
+    "people": 32,
+    "short_captures_without_forceplate_in_deposit": [
+      "35_MNTRL_RR_V4"
+    ],
+    "summary": [
+      {
+        "group": "All",
+        "check": "lifted plate unloaded during labelled stable phase",
+        "attempts": 557,
+        "people": 32,
+        "share": 1.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      {
+        "group": "All",
+        "check": "stance COP speed lowest in labelled stable phase",
+        "attempts": 552,
+        "people": 32,
+        "share": 0.3877,
+        "ci95_low": 0.3104,
+        "ci95_high": 0.4655
+      },
+      {
+        "group": "All",
+        "check": "stance COP speed lower than foot up phase (added after plan)",
+        "attempts": 552,
+        "people": 32,
+        "share": 0.8043,
+        "ci95_low": 0.7556,
+        "ci95_high": 0.8536
+      },
+      {
+        "group": "All",
+        "check": "force-plate onset within 0.5 s of t_stable",
+        "attempts": 556,
+        "people": 32,
+        "share": 0.1385,
+        "ci95_low": 0.1083,
+        "ci95_high": 0.1721
+      },
+      {
+        "group": "All",
+        "check": "force-plate onset minus t_stable, s (median; p25 to p75 in CI columns)",
+        "attempts": 556,
+        "people": 32,
+        "share": 1.3054,
+        "ci95_low": 0.7771,
+        "ci95_high": 1.8833
+      },
+      {
+        "group": "All",
+        "check": "median stance COP speed, fu phase, mm/s",
+        "attempts": 552,
+        "people": 32,
+        "share": 101.4833,
+        "ci95_low": 78.5788,
+        "ci95_high": 133.0915
+      },
+      {
+        "group": "All",
+        "check": "median stance COP speed, stable phase, mm/s",
+        "attempts": 557,
+        "people": 32,
+        "share": 67.6024,
+        "ci95_low": 52.6896,
+        "ci95_high": 88.1695
+      },
+      {
+        "group": "All",
+        "check": "median stance COP speed, fd phase, mm/s",
+        "attempts": 557,
+        "people": 32,
+        "share": 62.6689,
+        "ci95_low": 40.2443,
+        "ci95_high": 93.4701
+      },
+      {
+        "group": "Young",
+        "check": "lifted plate unloaded during labelled stable phase",
+        "attempts": 183,
+        "people": 15,
+        "share": 1.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      {
+        "group": "Young",
+        "check": "stance COP speed lowest in labelled stable phase",
+        "attempts": 183,
+        "people": 15,
+        "share": 0.4372,
+        "ci95_low": 0.3187,
+        "ci95_high": 0.5544
+      },
+      {
+        "group": "Young",
+        "check": "stance COP speed lower than foot up phase (added after plan)",
+        "attempts": 183,
+        "people": 15,
+        "share": 0.9126,
+        "ci95_low": 0.8547,
+        "ci95_high": 0.962
+      },
+      {
+        "group": "Young",
+        "check": "force-plate onset within 0.5 s of t_stable",
+        "attempts": 253,
+        "people": 15,
+        "share": 0.1067,
+        "ci95_low": 0.072,
+        "ci95_high": 0.1412
+      },
+      {
+        "group": "Young",
+        "check": "force-plate onset minus t_stable, s (median; p25 to p75 in CI columns)",
+        "attempts": 253,
+        "people": 15,
+        "share": 1.3017,
+        "ci95_low": 0.86,
+        "ci95_high": 1.8058
+      },
+      {
+        "group": "Young",
+        "check": "median stance COP speed, fu phase, mm/s",
+        "attempts": 183,
+        "people": 15,
+        "share": 93.9031,
+        "ci95_low": 74.8792,
+        "ci95_high": 122.3261
+      },
+      {
+        "group": "Young",
+        "check": "median stance COP speed, stable phase, mm/s",
+        "attempts": 183,
+        "people": 15,
+        "share": 59.93,
+        "ci95_low": 49.6386,
+        "ci95_high": 69.057
+      },
+      {
+        "group": "Young",
+        "check": "median stance COP speed, fd phase, mm/s",
+        "attempts": 183,
+        "people": 15,
+        "share": 54.9735,
+        "ci95_low": 40.4993,
+        "ci95_high": 75.376
+      },
+      {
+        "group": "Old",
+        "check": "lifted plate unloaded during labelled stable phase",
+        "attempts": 374,
+        "people": 17,
+        "share": 1.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      {
+        "group": "Old",
+        "check": "stance COP speed lowest in labelled stable phase",
+        "attempts": 369,
+        "people": 17,
+        "share": 0.3631,
+        "ci95_low": 0.265,
+        "ci95_high": 0.458
+      },
+      {
+        "group": "Old",
+        "check": "stance COP speed lower than foot up phase (added after plan)",
+        "attempts": 369,
+        "people": 17,
+        "share": 0.7507,
+        "ci95_low": 0.6847,
+        "ci95_high": 0.8054
+      },
+      {
+        "group": "Old",
+        "check": "force-plate onset within 0.5 s of t_stable",
+        "attempts": 303,
+        "people": 17,
+        "share": 0.165,
+        "ci95_low": 0.1173,
+        "ci95_high": 0.2169
+      },
+      {
+        "group": "Old",
+        "check": "force-plate onset minus t_stable, s (median; p25 to p75 in CI columns)",
+        "attempts": 303,
+        "people": 17,
+        "share": 1.3075,
+        "ci95_low": 0.6725,
+        "ci95_high": 1.9346
+      },
+      {
+        "group": "Old",
+        "check": "median stance COP speed, fu phase, mm/s",
+        "attempts": 369,
+        "people": 17,
+        "share": 107.3233,
+        "ci95_low": 79.6282,
+        "ci95_high": 137.4848
+      },
+      {
+        "group": "Old",
+        "check": "median stance COP speed, stable phase, mm/s",
+        "attempts": 374,
+        "people": 17,
+        "share": 75.9075,
+        "ci95_low": 55.1389,
+        "ci95_high": 96.8718
+      },
+      {
+        "group": "Old",
+        "check": "median stance COP speed, fd phase, mm/s",
+        "attempts": 374,
+        "people": 17,
+        "share": 66.9278,
+        "ci95_low": 40.1102,
+        "ci95_high": 116.0647
+      }
+    ]
+  },
+  "figure_titles": {
+    "fig01": "Deposit audit: captures and event completeness",
+    "fig02": "How the short and long captures are organised",
+    "fig03": "Primary result: same 4 s task, Young vs Old (person level)",
+    "fig04": "Sensitivity analyses: Old minus Young",
+    "fig05": "Stance foot and self rated balance (descriptive)",
+    "fig06": "Long 20 s captures, Old group only (descriptive)",
+    "fig07": "Force-plate check of the official labels"
+  },
+  "figure_footer": "Data: Copeland et al., PhysioNet olst-mocap-forceplate-radar 1.0, doi 10.13026/46hn-6b25, CC BY 4.0. Analysis: OLST Balance Lab. Yoga tree task, healthy adults only; not a clinical OLST time or fall risk test.",
+  "outputs": {
+    "tables": [
+      "t01_card_vs_files.csv",
+      "t02_audit_flags.csv",
+      "t03_event_completeness.csv",
+      "t04_primary_sample.csv",
+      "t05_primary_young_vs_old.csv",
+      "t06_attempt_shares_per_person.csv",
+      "t07_sensitivity_attempt_level_S1.csv",
+      "t08_sensitivity_person_level.csv",
+      "t09_stance_foot.csv",
+      "t10_self_assessment_spearman.csv",
+      "t11_self_assessment_cells.csv",
+      "t12_long_old_only_descriptive.csv",
+      "t13_attempts_per_window.csv",
+      "t14_forceplate_check.csv"
+    ],
+    "figures": [
+      "fig01_deposit_audit.png",
+      "fig01_deposit_audit.webp",
+      "fig02_protocol_schematic.png",
+      "fig02_protocol_schematic.webp",
+      "fig03_primary_young_vs_old.png",
+      "fig03_primary_young_vs_old.webp",
+      "fig04_sensitivity.png",
+      "fig04_sensitivity.webp",
+      "fig05_stance_and_self_rating.png",
+      "fig05_stance_and_self_rating.webp",
+      "fig06_long_old_only.png",
+      "fig06_long_old_only.webp",
+      "fig07_forceplate_check.png",
+      "fig07_forceplate_check.webp"
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+sample,endpoint,n_young,n_old,young_mean,young_ci95_low,young_ci95_high,young_median,old_mean,old_ci95_low,old_ci95_high,old_median,diff_old_minus_young,diff_ci95_low,diff_ci95_high,welch_ci95_low,welch_ci95_high,welch_p
+"primary sample, attempt shares per person",early_touchdown_share,15,17,0.0178509,0.00350877,0.034693,0,0.275231,0.192989,0.368089,0.241379,0.25738,0.173604,0.351285,0.159278,0.355482,3.59632e-05
+"primary sample, attempt shares per person",naive_break_share,15,17,0.672617,0.667836,0.678231,0.666667,0.728448,0.692676,0.767396,0.714286,0.0558306,0.0189483,0.0948045,0.0134747,0.0981865,0.0128732
+"primary sample, attempt shares per person",never_stable_share,15,17,0,0,0,0,0.0879519,0.0564111,0.12545,0.0645161,0.0879519,0.0564111,0.12545,0.0500792,0.125824,0.000152883

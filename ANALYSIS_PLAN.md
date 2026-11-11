@@ -138,4 +138,16 @@ tables, figures, code or coefficients.
 
 ## Changes after this plan was saved
 
-None yet.
+* No change to the event definitions, window rule, primary sample, endpoints, sensitivities or CI methods.
+* Force-plate download narrowed to the short capture files (418 CSVs, about 2.2 GB), because section 9 uses
+  short attempts only. Files fetched before the narrowing (some long capture CSVs) stay local, gitignored
+  and unused.
+* Force-plate run rule made explicit: one labelled short capture (`35_MNTRL_RR_V4`) has no force-plate CSV
+  in the deposit, so the check runs on the other 209 short captures. Flagged in the audit (A10c).
+* Added, descriptive and labelled post hoc: the share of attempts whose stable phase stance COP speed is
+  lower than the foot up phase alone. It was added after the pre-specified three phase rule disagreed, to
+  show which comparison drives the disagreement. It is not used for any conclusion about the labels.
+* Audit additions (no effect on endpoints): participant 12 capture versions in each folder, radar frame vs
+  time consistency, and labelled captures lacking force-plate files.
+* S3 (final attempt only): no final attempt in the short captures was ever unstable, so its failure share
+  is 0 in both groups and is reported as uninformative.

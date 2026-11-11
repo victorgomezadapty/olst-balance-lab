@@ -1,0 +1,4 @@
+sample,endpoint,n_young,n_old,young_mean,young_ci95_low,young_ci95_high,young_median,old_mean,old_ci95_low,old_ci95_high,old_median,diff_old_minus_young,diff_ci95_low,diff_ci95_high,welch_ci95_low,welch_ci95_high,welch_p
+primary,window_failure_share,15,17,0.0192593,0.0037037,0.0377778,0,0.27964,0.174837,0.402326,0.208333,0.260381,0.15399,0.38401,0.133273,0.387489,0.000472371
+primary,tts_s,15,17,0.589333,0.539667,0.646008,0.59,0.339289,0.278873,0.403237,0.32,-0.250044,-0.331942,-0.168022,-0.338018,-0.16207,2.4705e-06
+primary,first_hold_s,15,17,3.349,3.279,3.42533,3.315,2.52176,2.13529,2.88061,2.585,-0.827235,-1.22852,-0.463156,-1.24418,-0.41029,0.000608996
