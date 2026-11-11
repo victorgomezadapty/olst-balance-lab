@@ -50,8 +50,10 @@ The only data used in this project is the following PhysioNet deposit:
 
 * GitHub, https://github.com/victorgomezadapty/olst-balance-lab: the two official metadata tables,
   `LICENSE.txt` and `SHA256SUMS.txt`, unmodified, plus code, documents and aggregate results.
-* Kaggle: a dataset with the two official metadata tables and this attribution file only, and a notebook that
-  runs the metadata analysis. Links are added to the README once live.
+* Kaggle dataset, https://www.kaggle.com/datasets/vctorandrsgmezlpez/one-leg-stance-events-in-young-and-older-adults: the two official metadata tables, the official `LICENSE.txt` and an attribution
+  file only, CC BY 4.0.
+* Kaggle notebook, https://www.kaggle.com/code/vctorandrsgmezlpez/olst-balance-lab-one-leg-stance-re-analysis: runs the metadata analysis from those two tables; force-plate results appear only
+  as aggregates computed locally from the deposit.
 * No dedicated Vercel site. A portfolio case may link here later.
 * Never published anywhere: force-plate, motion capture, QTM or radar files, the deposit `README.txt`, and the
   deposit `Figures/` folder.

@@ -5,8 +5,9 @@ healthy adults: on the same short, cued one-leg yoga tree task, how do younger a
 often they need a retry, how fast they settle, and how long the first stable hold lasts?
 
 **Status: public.** Code, documents, aggregate results and the two official metadata tables on GitHub
-(https://github.com/victorgomezadapty/olst-balance-lab). A Kaggle dataset (official metadata tables only) and a
-Kaggle notebook will be linked here when they are live. A portfolio case will follow; there is no dedicated
+(https://github.com/victorgomezadapty/olst-balance-lab). Kaggle dataset (the two official metadata tables
+only, with attribution): https://www.kaggle.com/datasets/vctorandrsgmezlpez/one-leg-stance-events-in-young-and-older-adults. Kaggle notebook (the metadata analysis, runs from those two tables):
+https://www.kaggle.com/code/vctorandrsgmezlpez/olst-balance-lab-one-leg-stance-re-analysis. A portfolio case will follow; there is no dedicated
 Vercel site. Raw force-plate, motion capture, QTM and radar signals stay local and gitignored (see
 [DATA_LICENSE.md](DATA_LICENSE.md)).
 
