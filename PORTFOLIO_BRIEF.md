@@ -1,6 +1,6 @@
 # Portfolio brief (locked facts)
 
-Language: English by default; a Spanish version can be prepared later. Nothing here is published.
+Language: English by default; a Spanish version can be prepared later.
 
 ## One line
 
@@ -33,4 +33,6 @@ younger adults, while their best hold matched.
 
 ## Status
 
-Local git repository only. No remote, no GitHub, no Kaggle, no Vercel, no contact with the creators.
+Public plan: GitHub repository https://github.com/victorgomezadapty/olst-balance-lab; Kaggle dataset with the two
+official metadata tables only, plus a Kaggle notebook running the metadata analysis; a portfolio case later. No
+dedicated Vercel site. Raw signals stay local and gitignored. No contact with the creators.

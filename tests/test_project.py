@@ -229,11 +229,24 @@ def test_gitignore_keeps_metadata_but_not_raw_signals():
         assert "data/raw/README.txt" not in files
 
 
-def test_no_remote_configured():
+def test_only_expected_remote():
     if not (ROOT / ".git").exists():
         pytest.skip("no git repo")
-    out = subprocess.run(["git", "remote"], cwd=ROOT, capture_output=True, text=True).stdout.strip()
-    assert out == ""
+    out = subprocess.run(["git", "remote", "-v"], cwd=ROOT, capture_output=True, text=True).stdout.split()
+    urls = {u for u in out if "://" in u or u.startswith("git@")}
+    assert urls <= {"https://github.com/victorgomezadapty/olst-balance-lab.git", "https://github.com/victorgomezadapty/olst-balance-lab"}
+
+
+def test_single_person_cells_suppressed():
+    t = pd.read_csv(ROOT / "tables" / "t11_self_assessment_cells.csv")
+    small = t[t["n_people"] < 2]
+    assert len(small) >= 1 and small["suppressed"].all()
+    assert small[["mean_failure_share", "median_first_hold_s"]].isna().all().all()
+    assert t.loc[t["n_people"] >= 2, "mean_failure_share"].notna().all()
+    lt = pd.read_csv(ROOT / "tables" / "t12_long_old_only_descriptive.csv")
+    assert lt.loc[lt["measure"].str.startswith("people"), ["min", "max"]].isna().all().all()
+    for p in ["README.md", "DISCUSSION.md", "RESULTS.md"]:
+        assert "86%" not in (ROOT / p).read_text(encoding="utf-8")
 
 
 def our_texts():

@@ -42,8 +42,19 @@ The only data used in this project is the following PhysioNet deposit:
 * All outputs (`tables/`, `figures/`, `results/summary.json`, `RESULTS.md`) are aggregate research results:
   counts, means, medians, shares, intervals. Figure 3 shows one summary dot per person with no identifier.
   No individual trace is shown.
+* Derived table or figure cells that describe a single person are suppressed (values left empty and marked).
 * The outputs are not offered as a separate data release under any new license. If shown, they carry the
   CC BY 4.0 attribution above.
+
+## Where the data is published
+
+* GitHub, https://github.com/victorgomezadapty/olst-balance-lab: the two official metadata tables,
+  `LICENSE.txt` and `SHA256SUMS.txt`, unmodified, plus code, documents and aggregate results.
+* Kaggle: a dataset with the two official metadata tables and this attribution file only, and a notebook that
+  runs the metadata analysis. Links are added to the README once live.
+* No dedicated Vercel site. A portfolio case may link here later.
+* Never published anywhere: force-plate, motion capture, QTM or radar files, the deposit `README.txt`, and the
+  deposit `Figures/` folder.
 
 ### Changes made (CC BY 4.0 section 3(a)(1)(B))
 

@@ -81,15 +81,19 @@ def write_results_md(s: dict, path: Path) -> None:
           "| Group, endpoint | n | Spearman rho (95% CI) |", "|-|-|-|"]
     for k, v in s["self_assessment_descriptive"].items():
         L.append(f"| {k.replace('|', ', ')} | {v['n_people']} | {_f(v['spearman_rho'])} ({_f(v['ci95_low'])} to {_f(v['ci95_high'])}) |")
-    L += ["", "Self ratings span only 2 to 5 and groups are small; these correlations are descriptive.", "",
+    L += ["", "Self ratings span only 2 to 5 and groups are small; these correlations are descriptive. In the cell table "
+          "(`tables/t11_self_assessment_cells.csv`) and figure 5, any cell describing a single person is suppressed "
+          "(values left empty, `suppressed` = True); this affects one Old cell (rating 2). The correlations above still use all 32 people.", "",
           "## 7. Long 20 s captures, Old only (descriptive, separate)", "",
           "| Measure | n | Median | P25 | P75 | Min | Max |", "|-|-|-|-|-|-|-|"]
     for k, v in s["long_old_only_descriptive"].items():
         if v["p25"] is None:
             L.append(f"| {k} (share) | {v['n']} | {_f(v['median'], True)} | | | | |")
         else:
-            L.append(f"| {k} | {v['n']} | {_f(v['median'])} | {_f(v['p25'])} | {_f(v['p75'])} | {_f(v['min'])} | {_f(v['max'])} |")
-    L += ["", "No Young long captures exist, so these values are never compared with Young and are not clinical OLST times.", "",
+            mn = "suppressed" if v["min"] is None else _f(v["min"])
+            mx = "suppressed" if v["max"] is None else _f(v["max"])
+            L.append(f"| {k} | {v['n']} | {_f(v['median'])} | {_f(v['p25'])} | {_f(v['p75'])} | {mn} | {mx} |")
+    L += ["", "Min and max of person level summaries are single people and are suppressed. No Young long captures exist, so these values are never compared with Young and are not clinical OLST times.", "",
           "## 8. Force-plate check of the labels", ""]
     fp = s["forceplate"]
     if fp["status"] == "run":

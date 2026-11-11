@@ -1,7 +1,7 @@
 {
   "project": "OLST Balance Lab",
   "package": "olst_balance_lab",
-  "status": "local draft, not published",
+  "status": "public: GitHub and Kaggle (official metadata only); raw signals local",
   "dataset": {
     "title": "Multimodal Synchronized Motion Capture, Force Plate, and Radar Dataset of the One-Legged Stand Test for Fall-Risk Assessment",
     "physionet_slug": "olst-mocap-forceplate-radar",
@@ -880,16 +880,16 @@
       "median": 11.035,
       "p25": 7.875,
       "p75": 17.31,
-      "min": 2.375,
-      "max": 19.555
+      "min": null,
+      "max": null
     },
     "people: best longest hold, s": {
       "n": 17,
       "median": 18.04,
       "p25": 14.41,
       "p75": 19.24,
-      "min": 5.32,
-      "max": 20.84
+      "min": null,
+      "max": null
     },
     "captures: one single attempt": {
       "n": 124,

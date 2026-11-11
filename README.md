@@ -4,8 +4,11 @@ A transparent, reproducible re-analysis of one open PhysioNet deposit of one-leg
 healthy adults: on the same short, cued one-leg yoga tree task, how do younger and older adults differ in how
 often they need a retry, how fast they settle, and how long the first stable hold lasts?
 
-**Status: local draft, not published.** No GitHub remote, no Kaggle, no Vercel. Code and documents only;
-raw signals stay on the local machine (see [DATA_LICENSE.md](DATA_LICENSE.md)).
+**Status: public.** Code, documents, aggregate results and the two official metadata tables on GitHub
+(https://github.com/victorgomezadapty/olst-balance-lab). A Kaggle dataset (official metadata tables only) and a
+Kaggle notebook will be linked here when they are live. A portfolio case will follow; there is no dedicated
+Vercel site. Raw force-plate, motion capture, QTM and radar signals stay local and gitignored (see
+[DATA_LICENSE.md](DATA_LICENSE.md)).
 
 ## About the name
 
@@ -37,7 +40,7 @@ persons resampled within group.
 
 The plain reading: in this healthy sample, younger adults almost always completed a 4 s window in one stable
 attempt; older adults needed a retry or never settled in about one window in four, with a wide spread between
-people (0% to 86%). Their first stable hold was about 0.8 s shorter. But the best hold any older adult produced
+people (interquartile range 11% to 29% of windows). Their first stable hold was about 0.8 s shorter. But the best hold any older adult produced
 in a short window was as long as the younger adults' (sensitivity S4: +0.18 s, -0.18 to +0.54). On this task
 the age difference is mainly about consistency, not about the longest hold someone can produce.
 
@@ -103,7 +106,7 @@ investigate.
 | `scripts/fetch_data.py` | Copies or downloads official files and stops on any sha256 mismatch, with `forceplate` it adds the short capture force-plate CSVs |
 | `scripts/run_analysis.py` | Regenerates `tables/`, `figures/`, `results/summary.json`, `RESULTS.md` |
 | `tests/` | Integrity, refusal on mismatch, definitions, sample, outputs, license, privacy and copy tests |
-| `tables/` | 14 CSV tables, aggregates only |
+| `tables/` | 14 CSV tables, aggregates only; cells describing a single person are suppressed |
 | `figures/` | 7 figures as PNG with WebP twins |
 | `ANALYSIS_PLAN.md` | Pre-specified plan (committed before outcome results) |
 | `PORTFOLIO_BRIEF.md` | Locked facts for a later portfolio case |

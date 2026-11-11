@@ -196,7 +196,7 @@ def fig_stance_self(stance: pd.DataFrame, cells: pd.DataFrame, path: Path):
     fig.text(0.06, 0.86, "Left base minus right base, paired within person (95% CI)", fontsize=9)
     ax = fig.add_axes([0.63, 0.25, 0.34, 0.55])
     for g in ["Young", "Old"]:
-        c = cells[cells.age_group == g]
+        c = cells[(cells.age_group == g) & ~cells.suppressed]
         off = 0.08 if g == "Old" else -0.08
         ax.scatter(c.self_assessment + off, c.mean_failure_share * 100, s=c.n_people * 25, color=COL[g], alpha=0.7, label=g)
         for _, r in c.iterrows():
@@ -206,7 +206,7 @@ def fig_stance_self(stance: pd.DataFrame, cells: pd.DataFrame, path: Path):
     ax.set_ylabel("mean window failure share, %")
     ax.legend(frameon=False, fontsize=8)
     ax.set_title("Self rating vs observed short window failure", fontsize=9, loc="left")
-    return _save(fig, path, "Descriptive only. Leg dominance was not recorded in the deposit, so left vs right is not dominant vs non dominant.")
+    return _save(fig, path, "Descriptive only. Cells with a single person are suppressed (one Old cell, rating 2). Leg dominance was not recorded, so left vs right is not dominant vs non dominant.")
 
 
 def fig_long(cap: pd.DataFrame, path: Path):

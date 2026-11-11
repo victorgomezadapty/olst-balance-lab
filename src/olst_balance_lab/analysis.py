@@ -114,10 +114,16 @@ def self_assessment(person: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+MIN_CELL = 2  # cells describing fewer people than this are suppressed in public outputs
+
+
 def self_assessment_cells(person: pd.DataFrame) -> pd.DataFrame:
     g = person.groupby(["age_group", "self_assessment"])
-    return g.agg(n_people=("pid", "size"), mean_failure_share=("window_failure_share", "mean"),
-                 median_first_hold_s=("first_hold_s", "median")).reset_index()
+    t = g.agg(n_people=("pid", "size"), mean_failure_share=("window_failure_share", "mean"),
+              median_first_hold_s=("first_hold_s", "median")).reset_index()
+    t["suppressed"] = t["n_people"] < MIN_CELL
+    t.loc[t["suppressed"], ["mean_failure_share", "median_first_hold_s"]] = np.nan
+    return t
 
 
 def long_trials(a: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -144,8 +150,10 @@ def long_summary(cap: pd.DataFrame, per: pd.DataFrame) -> pd.DataFrame:
                     ("people: median longest hold, s", per["median_longest_hold_s"]),
                     ("people: best longest hold, s", per["best_longest_hold_s"])]:
         v = v.astype(float)
+        person_level = name.startswith("people")  # min and max of person summaries are single people: suppressed
         rows.append({"measure": name, "n": int(v.notna().sum()), "median": v.median(), "p25": v.quantile(0.25),
-                     "p75": v.quantile(0.75), "min": v.min(), "max": v.max()})
+                     "p75": v.quantile(0.75), "min": np.nan if person_level else v.min(),
+                     "max": np.nan if person_level else v.max()})
     rows.append({"measure": "captures: one single attempt", "n": len(cap), "median": float((cap["n_attempts"] == 1).mean()),
                  "p25": np.nan, "p75": np.nan, "min": np.nan, "max": np.nan})
     rows.append({"measure": "captures: longest hold censored by capture end", "n": len(cap),

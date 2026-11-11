@@ -55,5 +55,7 @@ Nothing was downloaded from `OLST_QTM/`, `Processed/Radar_RDMs/`, `Raw/MOCAP/` o
 2. Size and sha256 of every official file used are checked on every load; the analysis stops on mismatch.
 3. Outputs are aggregates. No attempt identifiers, no individual traces.
 4. The companion paper is cited only. Its text, tables, figures, code and coefficients are not reused.
-5. Nothing is published from this local draft: no git remote, no GitHub, no Kaggle, no Vercel, no contact
-   with the creators.
+5. Public surfaces: the GitHub repository (code, documents, aggregate results, the two official metadata tables,
+   `LICENSE.txt` and `SHA256SUMS.txt`) and a Kaggle dataset with the two official metadata tables only, plus a
+   notebook. No dedicated Vercel site. Raw signals are never published. No contact with the creators.
+6. Derived cells that describe a single person are suppressed in public outputs.

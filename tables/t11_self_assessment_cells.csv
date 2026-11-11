@@ -1,7 +1,7 @@
-age_group,self_assessment,n_people,mean_failure_share,median_first_hold_s
-Old,2,1,0.857143,0.9
-Old,3,7,0.366201,2.38
-Old,4,9,0.148148,2.84
-Young,3,4,0.0166667,3.54
-Young,4,9,0.0246914,3.31
-Young,5,2,0,3.32
+age_group,self_assessment,n_people,mean_failure_share,median_first_hold_s,suppressed
+Old,2,1,,,True
+Old,3,7,0.366201,2.38,False
+Old,4,9,0.148148,2.84,False
+Young,3,4,0.0166667,3.54,False
+Young,4,9,0.0246914,3.31,False
+Young,5,2,0,3.32,False

@@ -4,7 +4,7 @@
 
 On the same cued 4 s yoga tree task, the clearest age difference in this healthy sample is consistency:
 younger adults almost never needed a retry (1.9% of windows), older adults did in about 28% of windows, with
-large differences between older individuals (0% to 86%). The first stable hold in a window was about 0.8 s
+large differences between older individuals (interquartile range 11% to 29% of windows). The first stable hold in a window was about 0.8 s
 shorter in the older group, but the best hold an older adult produced in any short window was as long as
 the younger adults'. A reasonable clinical reading, limited to this task and sample, is that many healthy
 older adults can produce a full short hold but do not do it reliably on the first attempt.

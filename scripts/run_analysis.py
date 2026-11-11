@@ -123,7 +123,7 @@ def main() -> None:
         made += F.fig_forceplate(c["fp_sum"], FIGS / "fig07_forceplate_check.png")
     prim = c["prim"]
     summary = {
-        "project": D.SHORT_NAME, "package": D.PACKAGE, "status": "local draft, not published",
+        "project": D.SHORT_NAME, "package": D.PACKAGE, "status": "public: GitHub and Kaggle (official metadata only); raw signals local",
         "dataset": {"title": D.DATASET_TITLE, "physionet_slug": D.SLUG, "version": D.VERSION, "page": D.PAGE_URL,
                     "version_doi": D.VERSION_DOI, "concept_doi": D.CONCEPT_DOI, "published": D.PUBLISHED, "creators": D.CREATORS,
                     "citation": D.DATASET_CITATION, "physionet_citation": D.PHYSIONET_CITATION, "access": "open access",

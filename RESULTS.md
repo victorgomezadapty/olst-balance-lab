@@ -130,7 +130,7 @@ Leg dominance was not recorded, so this is left vs right, not dominant vs non do
 | Old, window_failure_share | 17 | -0.71 (-0.91 to -0.36) |
 | Old, first_hold_s | 17 | 0.53 (0.00 to 0.87) |
 
-Self ratings span only 2 to 5 and groups are small; these correlations are descriptive.
+Self ratings span only 2 to 5 and groups are small; these correlations are descriptive. In the cell table (`tables/t11_self_assessment_cells.csv`) and figure 5, any cell describing a single person is suppressed (values left empty, `suppressed` = True); this affects one Old cell (rating 2). The correlations above still use all 32 people.
 
 ## 7. Long 20 s captures, Old only (descriptive, separate)
 
@@ -140,12 +140,12 @@ Self ratings span only 2 to 5 and groups are small; these correlations are descr
 | captures: longest stable hold, s | 124 | 11.30 | 6.92 | 17.55 | 1.62 | 20.84 |
 | captures: total stable time, s | 124 | 16.27 | 12.60 | 17.77 | 5.09 | 32.64 |
 | captures: foot lift to capture end, s | 124 | 19.34 | 18.65 | 19.84 | 5.66 | 22.01 |
-| people: median longest hold, s | 17 | 11.04 | 7.88 | 17.31 | 2.38 | 19.55 |
-| people: best longest hold, s | 17 | 18.04 | 14.41 | 19.24 | 5.32 | 20.84 |
+| people: median longest hold, s | 17 | 11.04 | 7.88 | 17.31 | suppressed | suppressed |
+| people: best longest hold, s | 17 | 18.04 | 14.41 | 19.24 | suppressed | suppressed |
 | captures: one single attempt (share) | 124 | 33.1% | | | | |
 | captures: longest hold censored by capture end (share) | 124 | 46.0% | | | | |
 
-No Young long captures exist, so these values are never compared with Young and are not clinical OLST times.
+Min and max of person level summaries are single people and are suppressed. No Young long captures exist, so these values are never compared with Young and are not clinical OLST times.
 
 ## 8. Force-plate check of the labels
 
